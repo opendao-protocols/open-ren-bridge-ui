@@ -502,7 +502,7 @@ class TransferContainer extends React.Component<any> {
                             <CurrencySelect
                               active={SYMBOL_MAP[selectedAsset]}
                               className={classes.currencySelect}
-                              items={["BTC", "ZEC", "BCH"]}
+                              items={["BTC"]}
                               onCurrencyChange={(v: string) => {
                                 const asset = v.toLowerCase();
                                 store.set(
@@ -603,7 +603,7 @@ class TransferContainer extends React.Component<any> {
                             <CurrencySelect
                               active={SYMBOL_MAP[selectedFormat]}
                               className={classes.currencySelect}
-                              items={["renBTC", "renZEC", "renBCH"]}
+                              items={["renBTC"]}
                               renBTCBalance={store.get("renBTCBalance")}
                               renZECBalance={store.get("renZECBalance")}
                               renBCHBalance={store.get("renBCHBalance")}

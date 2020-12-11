@@ -208,7 +208,7 @@ class AppWrapper extends React.Component<Props> {
           >
             <Container fixed maxWidth="lg">
               <Grid container alignItems="center" justify="space-between">
-                <Typography className={classes.footerLinks} variant="caption">
+                <Typography className={classes.footerLinks} variant="caption" style={{display: "none"}}>
                   <a
                     rel="noreferrer noopener"
                     target="_blank"
@@ -251,7 +251,7 @@ class AppWrapper extends React.Component<Props> {
                   <a
                     rel="noreferrer noopener"
                     target="_blank"
-                    href={"https://twitter.com/renprotocol"}
+                    href={"https://twitter.com/opendaoprotocol"}
                   >
                     <img
                       alt="Twitter"
@@ -262,7 +262,7 @@ class AppWrapper extends React.Component<Props> {
                   <a
                     rel="noreferrer noopener"
                     target="_blank"
-                    href={"https://github.com/renproject"}
+                    href={"https://github.com/opendao-protocols"}
                   >
                     <img
                       alt="Github"
@@ -273,23 +273,12 @@ class AppWrapper extends React.Component<Props> {
                   <a
                     rel="noreferrer noopener"
                     target="_blank"
-                    href={"https://t.me/renproject"}
+                    href={"https://t.me/opendao"}
                   >
                     <img
                       alt="Telegram"
                       className={classes.footerLogo}
                       src={Telegram}
-                    />
-                  </a>
-                  <a
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    href={"https://www.reddit.com/r/renproject"}
-                  >
-                    <img
-                      alt="Reddit"
-                      className={classes.footerLogo}
-                      src={Reddit}
                     />
                   </a>
                 </Typography>

@@ -6,6 +6,7 @@ import classNames from "classnames";
 import { initLocalWeb3 } from "../utils/walletUtils";
 
 import RenLogo from "../assets/ren-logo-black.svg";
+import OpenLogo from "../assets/opendao-logo.png";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
@@ -21,7 +22,7 @@ const styles: Styles<typeof theme, any> = (theme) => ({
     },
   },
   logo: {
-    height: 46,
+    height: 76,
     width: "auto",
     marginRight: theme.spacing(1),
   },
@@ -39,7 +40,7 @@ const styles: Styles<typeof theme, any> = (theme) => ({
   },
   accountButton: {
     fontSize: 12,
-    color: "#3F3F48",
+    color: "#FFFFFF",
     "& svg": {
       marginRight: theme.spacing(1),
     },
@@ -105,7 +106,7 @@ class NavContainer extends React.Component<any> {
             <Grid container alignItems="center">
               <Grid item xs={12} sm={8}>
                 <Grid container alignItems="center">
-                  <img alt="Ren Logo" className={classes.logo} src={RenLogo} />
+                  <img alt="Ren Logo" className={classes.logo} src={OpenLogo} />
                 </Grid>
               </Grid>
               <Grid item xs={12} sm={4}>

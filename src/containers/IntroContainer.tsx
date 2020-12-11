@@ -23,10 +23,11 @@ const styles: Styles<typeof theme, any> = (theme) => ({
   title: {
     marginBottom: theme.spacing(3),
     fontSize: 48,
-    color: "#3F3F48",
+    color: "#FFFFFF",
     [theme.breakpoints.down("sm")]: {
       fontSize: 24,
     },
+    fontWeight: "bold"
   },
   metamask: {
     paddingTop: theme.spacing(6),
@@ -69,6 +70,7 @@ const styles: Styles<typeof theme, any> = (theme) => ({
     opacity: "1 !important",
   },
   message: {
+    color: "#ffffff",
     marginBottom: theme.spacing(4),
     [theme.breakpoints.down("sm")]: {
       display: "none",
@@ -106,6 +108,9 @@ const styles: Styles<typeof theme, any> = (theme) => ({
     animationDuration: "550ms",
     position: "absolute",
     left: 0,
+  },
+  subtitle: {
+    color: "#ffffff",
   },
   mobileMessage: {
     display: "none",
@@ -147,7 +152,7 @@ class IntroContainer extends React.Component<any> {
     return (
       <div className={classes.container}>
         <Typography className={classes.title} variant="h2">
-          Bitcoin, Zcash and Bitcoin Cash on&nbsp;Ethereum.
+          Bitcoin on&nbsp;Ethereum.
         </Typography>
         <Typography className={classes.subtitle} variant="body1">
           The easy and permission-less way to bring cross-chain assets
